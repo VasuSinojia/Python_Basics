@@ -1,0 +1,10 @@
+#dictionary is nothing but the key values pairs
+
+d1 = {"Vasu":"Fish", "Nikunj": "Burger", "Mihir":"Roti",
+      "Shubham": {"BreakFast":"Meggie" , "lunch": "Pasta","Dinner": "Jalebi" }}
+
+print(d1)
+d1["Vimal"]="Chesse"
+print(d1)
+del_d1[Vimal]
+print(d1)
