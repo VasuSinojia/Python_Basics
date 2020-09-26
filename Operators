@@ -1,0 +1,33 @@
+#Arithmetic Operators
+print("5+3 is ",5+3)
+print("5-3 is ",5-3)
+
+#Assignment Operators
+x = 5
+print(x) #just an assignment of values
+
+#Comparison Operators
+i = 5
+print(i == 5)
+print(i != 5)
+
+#Logical Operators i.e. they are (and) and (or)
+x = 10
+y = 20
+if x == 10 and y == 20:
+    print(int(x))
+
+#identity Operators
+#they are is and is not
+
+x=10
+print(x is 10)
+print(x is not 50)
+
+#Membership Operators
+
+list = [3,2,33,56,89,65]
+
+print(56 in list)
+print(54 not in list)
+print(874 in list)
