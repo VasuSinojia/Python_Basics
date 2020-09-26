@@ -1,0 +1,28 @@
+"""var1 = 156
+var2 = 9856
+print("Enter the comparable number")
+var3 = int(input())
+
+if var3 > var2:
+    print("Greater number has been inserted")
+elif var3 == var2:
+    print("Equal number has been inserted")
+else:
+    print("Lesser number has been inserted")
+"""
+
+
+#project
+
+var1 = 18
+print("Enter your age")
+var2 = int(input())
+
+if var2>var1:
+    print("You can Drive")
+elif var2==var1:
+    print("We cannot Decide")
+else:
+    print("You cannot Drive")
+
+
