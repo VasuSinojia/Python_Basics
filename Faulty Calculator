@@ -1,0 +1,35 @@
+# faulty calc
+# incorrect calculation
+# 45*3=555, 56+9=77, 56/6=4
+
+print("Enter the operation u want to do\n")
+print("add for addition")
+print("div for division")
+print("mult for multiplication")
+opr = input()
+print("Enter 1st number")
+x = int(input())
+print("Enter 2nd number")
+y = int(input())
+
+if opr == "add" :
+
+    if x == 56 and y == 9:
+        print("77")
+    else:
+        print("Addition is ", int(x)+int(y))
+
+
+elif opr == "mult":
+
+    if x == 45 and y == 3:
+        print("555")
+    else:
+        print("Multiplication is ", int(x)*int(y))
+
+elif opr == "div":
+
+    if x == 56 and y == 6 :
+        print("4")
+    else:
+        print("Division is", int(x)/int(y))
