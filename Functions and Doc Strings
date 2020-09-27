@@ -1,0 +1,24 @@
+#a=10
+#b=20
+#c = sum((a,b)) #this sum() is the built in function
+#print(c)
+
+# User defined Functions
+
+def function1():
+    print("This is Function 1")
+
+function1()
+
+def function2(a,b):
+    print("the sum of entered number is ",a+b)
+
+function2(5,6)
+
+def func3(x,y):
+    """it will gives us the average of the two numbers""" #this is not comment This is doc string
+    z = print("The average is",(x+y)/2)
+    return z
+
+func3(6,9)
+print(func3.__doc__) #the doc string commands 
