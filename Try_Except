@@ -1,0 +1,26 @@
+#this can catch the run time error of the code
+
+
+print("enter a number")
+x= input()
+print("enter 2nd number")
+y= input()
+
+try:       #keyword use to detect error
+    print("the sum is ",int(x)+int(y))
+
+except Exception as e:      #keyword for throwing the error
+    print(e)
+
+print("this line is very important")
+
+
+
+OutPut :
+
+enter a number
+10
+enter 2nd number
+vasu
+invalid literal for int() with base 10: 'vasu'
+this line is very important
