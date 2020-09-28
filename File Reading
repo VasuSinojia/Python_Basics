@@ -1,0 +1,13 @@
+#first creat a .txt file in the same folder where you are saving your .py file
+#then follow the following
+
+f = open("Vasu.txt")
+content = f.read()
+print(content)
+
+# for line to line reading
+
+print(f.readline())
+
+for line in f:
+    print(line, end="")
