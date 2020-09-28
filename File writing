@@ -1,0 +1,19 @@
+#creat a file that u want to read or write or append
+
+# "w" will replace all the thing
+
+f = open("Vasu2.txt","w")
+f.write("\n Vasu is very charming")
+
+#if we want to add anything at the last the use "a"
+
+f=open("Vasu2.txt","a")
+f.write("\nVasu is very Smart")
+
+#read and write both
+
+f= open("Vasu2.txt","r+")
+v= f.read()
+print(v)
+w= f.write("Vasu is a Great Programmer")
+print(w) # it will return the lenght of the existing string
