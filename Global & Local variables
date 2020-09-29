@@ -1,0 +1,20 @@
+# global variable is applicable to whole program
+#  according to the priority it will first give to the global variable
+# but if you are calling the function then it will give to the local variable first
+
+l = 50 #global
+
+def funct():
+    l = 89 #local
+    print(l)
+    return l
+
+def funct2():
+    global l      # permission aqquired to change global variable
+    l = 563
+    print(l)
+    return l
+
+
+funct() #calling
+funct2()
