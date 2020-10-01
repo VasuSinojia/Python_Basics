@@ -1,0 +1,73 @@
+#Snake Water Gun Game:
+
+print("Hello welcome to the Snake Water Gun game")
+print("Developed by Vasu Sinojia")
+
+import random
+
+
+def snakeandwater():
+    print("Snake drank the water")
+    print("\nCongo you won")
+
+def snakeandgun():
+    print("Snake is shot by the Gun")
+    print("\nops you lose")
+
+def waterandsnake():
+    print("Snake drank the water")
+    print("\nops you lose")
+
+def waterandgun():
+    print("Gun sank in the water")
+    print("\nCongo you win")
+
+def gunandsnake():
+    print("Snake is shot by the gun")
+    print("\nCongo you win")
+
+def gunandwater():
+    print("Gun sank in the water")
+    print("\nOps you lose")
+n=1
+while n<10:
+    n = n+1
+    print("\nEnter your choice")
+    print(" snake")
+    print(" water")
+    print(" gun")
+
+    list = ["snake", "water", "gun"]
+
+    ran = random.choice(list)
+
+    ch = input()
+
+    if ch==ran:
+        print("We Both were Same its a Tie")
+    else:
+        print("\nMine is ", ran)
+        if ch=="snake" and ran=="water":
+            snakeandwater()
+
+        elif ch=="snake" and ran=="gun":
+            snakeandgun()
+
+        elif ch=="water" and ran=="snake":
+            waterandsnake()
+
+        elif ch=="water" and ran=="gun":
+            waterandgun()
+
+        elif ch=="gun" and ran=="snake":
+            gunandsnake()
+
+        elif ch=="gun" and ran=="water":
+            gunandwater()
+
+
+
+
+
+
+
