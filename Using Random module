@@ -1,0 +1,17 @@
+# there are two types of modules
+# external modules and built in modules
+# some we have to download
+
+
+# random module
+
+import random
+random_number = random.randint(0,50)
+print(random_number)
+
+int1 = random.random()*10
+print(int1)
+
+list = ["Vasu","Mihir","Nikunj","vimal","Shubham"]
+ch = random.choice(list)
+print(ch)
