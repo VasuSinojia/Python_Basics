@@ -1,0 +1,18 @@
+#Time Module gives us the execution Time
+
+import time
+
+initial = time.time()
+
+n=0
+while n<10:
+    print("I M Vasu")
+    time.sleep(1.5) # its will take a break of 1.5 secs and then it will further execute
+    n= n +1
+print("The Execution time for While loop is",initial-time.time() ,"Seconds" )
+
+for vs in range(11):
+    print("I M vasu")
+
+x = time.asctime(time.localtime(time.time()))
+print(x)
