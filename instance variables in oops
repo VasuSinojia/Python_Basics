@@ -1,0 +1,24 @@
+class Employee():
+    No_of_friends = 10
+    pass
+
+vasu = Employee()
+mihir = Employee()
+
+vasu.name = "Vasu"
+vasu.salary = 50000
+vasu.role = "Engineer"
+
+mihir.name = "Mihir"
+mihir.salary = 60000
+mihir.role = "Senior Engineer"
+
+print(vasu.salary)
+print(f"friends of mihir are {mihir.No_of_friends} ")
+
+Employee.No_of_friends=100        #Employee is the class name so it has ability to change
+vasu.No_of_friends=50 #object have no permission to change the value set by class
+print(f"friends of employee are{Employee.No_of_friends} ")
+print(f"Friends of Vasu are {vasu.No_of_friends}")
+
+
