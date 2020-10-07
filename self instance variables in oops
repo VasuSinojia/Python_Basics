@@ -1,0 +1,21 @@
+class Employee():
+    No_of_friends = 10
+    # this the function named 
+    # if changes are going to made then no need of changing particularly
+    # just change self function it will apply to all
+    def printdetails(self):
+        return f"The name is {self.name}. Salary is {self.salary} and The Role is {self.role}"
+
+vasu = Employee()
+mihir = Employee()
+
+vasu.name = "Vasu"
+vasu.salary = 50000
+vasu.role = "Engineer"
+
+mihir.name = "Mihir"
+mihir.salary = 60000
+mihir.role = "Senior Engineer"
+
+print(mihir.printdetails())
+print(vasu.printdetails())
