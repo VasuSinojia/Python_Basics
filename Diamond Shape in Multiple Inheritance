@@ -1,0 +1,23 @@
+class A():
+    def mat(self):
+        print("This is a method from Class A")
+
+class B(A):
+    def mat(self):
+        print("This is a method from Class B")
+
+class C(A):
+    # def mat(self):
+    #     print("This is a method from Class C")
+    pass
+
+class D(B, C):
+    def mat(self):
+        print("This is a method from Class D")
+
+a = A()
+b = B()
+c = C()
+d = D()
+
+c.mat()  
