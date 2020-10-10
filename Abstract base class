@@ -1,0 +1,22 @@
+
+# from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod           # this is giving the order that all of the further class compulsory have to define
+    def printarea(self):      # def printarea
+        return 0
+
+class Rectangle(Shape):
+    type = "Rectangle"
+    sides = 4
+    def __init__(self):
+        self.length = 6
+        self.breadth = 7
+
+    def printarea(self):                            #if we dont definr this then it will through an error
+        return self.length * self.breadth
+
+rect1 = Rectangle()
+print(rect1.printarea())
+
