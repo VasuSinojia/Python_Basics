@@ -1,0 +1,25 @@
+class Employee:
+    no_of_leaves = 8
+
+    def __init__(self, aname, asalary, arole):
+        self.name = aname
+        self.salary = asalary
+        self.role = arole
+
+    def printdetails(self):
+        return f"The Name is {self.name}. Salary is {self.salary} and role is {self.role}"
+
+    @classmethod
+    def change_leaves(cls, newleaves):
+        cls.no_of_leaves = newleaves
+
+    def __add__(self, other):     #for addition dunder methods starting from __&__
+        return self.salary + other.salary
+
+    def __truediv__(self, other):   #for division
+        return self.salary / other.salary
+
+emp1 =Employee("Harry", 345, "Programmer")
+emp2 =Employee("Vasu",652,"Manager")
+print(emp1+emp2)                 #from def __add__
+print(emp1/emp2)                 # from def __div__
